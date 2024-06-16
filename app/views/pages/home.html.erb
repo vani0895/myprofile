@@ -1,15 +1,17 @@
-
 <div class="container">
-
+  <div class="profile">
+    <%= image_tag "profile_pic.jpg", alt: "Profile Picture", class: "profile-pic" %>
+    <div class="info-card">
+      <h2>Srivani Anandarajah</h2>
+      <a href="https://www.linkedin.com/in/srivani-anand/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/vani0895" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <p>Développeuse Full Stack</p>
+      <p>Après 3 ans d’expérience en tant que commerciale dans la tech, ma passion pour la technologie et son impact évolutif sur notre quotidien m’a poussée à explorer de nouveaux horizons. J’ai rejoint le bootcamp Le Wagon avec l’objectif précis de devenir développeur full-stack. Je suis motivée à contribuer activement à des projets ambitieux et complexes.</p>
+    </div>
+  </div>
   <div class="card">
-    <h1>My profile</h1>
-    <%= image_tag "profile_pic.jpg", alt: "my picture", class: "picture" %>
-    <h2>Srivani, Développeuse Full Stack</h2>
-    <p>J'ai rejoint le Wagon pour faire la formation Développement Web</p>
+    <h2>My projects</h2>
+    <p>https://www.animalib-lewagon.xyz/</p>
   </div>
-
-  <div class="links">
-    <%= link_to "Know more about me", about_path, class: "btn" %>
-    <%= link_to "Contact", contact_path, class: "btn" %>
-  </div>
+</div>
 </div>
