@@ -3,15 +3,19 @@
     <%= image_tag "profile_pic.jpg", alt: "Profile Picture", class: "profile-pic" %>
     <div class="info-card">
       <h2>Srivani Anandarajah</h2>
-      <a href="https://www.linkedin.com/in/srivani-anand/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/vani0895" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/srivani-anand/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/vani0895" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
       <p>Développeuse Full Stack</p>
       <p>Après 3 ans d’expérience en tant que commerciale dans la tech, ma passion pour la technologie et son impact évolutif sur notre quotidien m’a poussée à explorer de nouveaux horizons. J’ai rejoint le bootcamp Le Wagon avec l’objectif précis de devenir développeur full-stack. Je suis motivée à contribuer activement à des projets ambitieux et complexes.</p>
     </div>
   </div>
   <div class="card">
-    <h2>My projects</h2>
-    <p>https://www.animalib-lewagon.xyz/</p>
+    <h2>My Projects</h2>
+    <a href="https://www.animalib-lewagon.xyz/" target="_blank">
+      <%= image_tag "animalib.png", alt: "Animalib", class: "project-image" %>
+    </a>
+    <a href="https://www.animalib-lewagon.xyz/" class="btn" target="_blank">Explore my latest project, Animalib!</a>
   </div>
-</div>
 </div>
