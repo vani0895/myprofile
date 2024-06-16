@@ -12,28 +12,25 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  min-height: 100vh;
+  align-items: flex-start; /* Align items to the start (left) of the container */
+  justify-content: space-between;
+  min-height: 110vh;
   padding: 20px;
   background-color: #f4eeff;
-
 }
 
-.card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
-}
 
 .profile {
   position: relative;
-  text-align: center;
+  text-align: left; /* Align text to the left within the profile section */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  h1{
+    text-align: center;
+  }
+
 }
 
 .profile-pic {
@@ -48,29 +45,22 @@ body {
 
 .info-card {
   position: absolute;
-  bottom: -150px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0; /* Position at the top of the profile section */
+  left: 200px; /* Distance from the left edge of the profile picture */
+  transform: translateX(100%); /* Initially move out of view to the right */
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
-  width: 100%;
-  min-width: 800px;
-  h2 {
-    font-size: medium;
-  }
-  p {
-    font-size: small;
-  }
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition for animation */
+  width: calc(100% - 150px); /* Adjust width to fit remaining space */
+  min-width: 700px;
 }
 
-
 .profile:hover .info-card {
-  bottom: 0;
+  transform: translateX(0); /* Slide in from right to left */
   opacity: 1;
   visibility: visible;
 }
@@ -88,6 +78,17 @@ body {
   color: #333;
   font-size: 24px;
   margin: 0 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 .card h2 {
