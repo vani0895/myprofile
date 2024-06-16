@@ -1,7 +1,26 @@
 <div class="container">
+
   <div class="profile">
+
     <%= image_tag "profile_pic.jpg", alt: "Profile Picture", class: "profile-pic" %>
-    <h1>Mon profil</h1>
+
+    <div class="skills">
+      <h2>Compétences</h2>
+      <ul>
+        <li>HTML <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div></li>
+        <li>CSS <div class="skill-bar"><div class="progress" style="width: 80%;"></div></div></li>
+        <li>JavaScript <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div></li>
+        <li>Ruby on Rails <div class="skill-bar"><div class="progress" style="width: 70%;"></div></div></li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contactez-moi</h2>
+      <p><i class="fa-solid fa-envelope"></i> srivani.anand@outlook.fr </p>
+      <p><i class="fa-solid fa-phone"></i> +33660798952 </p>
+    </div>
+
+
     <div class="info-card">
       <h2>Srivani Anandarajah</h2>
       <div class="social-links">
@@ -11,7 +30,10 @@
       <p>Développeuse Full Stack</p>
       <p>Après 3 ans d’expérience en tant que commerciale dans la tech, ma passion pour la technologie et son impact évolutif sur notre quotidien m’a poussée à explorer de nouveaux horizons. J’ai rejoint le bootcamp Le Wagon avec l’objectif précis de devenir développeur full-stack. Je suis motivée à contribuer activement à des projets ambitieux et complexes.</p>
     </div>
+
   </div>
+
+
   <div class="card">
     <h2>My Projects</h2>
     <a href="https://www.animalib-lewagon.xyz/" target="_blank">
@@ -19,4 +41,5 @@
     </a>
     <a href="https://www.animalib-lewagon.xyz/" class="btn" target="_blank">Explore my latest project, Animalib!</a>
   </div>
+
 </div>
